@@ -12,18 +12,18 @@ import com.diegolirio.demo.domain.orm.Produto;
 import com.diegolirio.demo.services.ProdutoService;
 
 @RestController
-@RequestMapping(value="/api/v1/produto")
+@RequestMapping(value="/api/v1/produtos")
 public class ProdutoApiRestController {
 
 	@Autowired @Qualifier("produtoServiceImpl")
 	private ProdutoService produtoService;
 
-	@GetMapping("/find-all")
+	@GetMapping
 	public Iterable<Produto> findAll() {
 		return this.produtoService.findAll();
 	}
 	
-	@PostMapping("/save")
+	@PostMapping
 	public Produto save(@RequestBody Produto produto) {
 		return this.produtoService.save(produto);
 	}
