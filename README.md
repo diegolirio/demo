@@ -1,3 +1,3 @@
 # Criando uma aplicação web Spring Boot com Spring Data JPA
 
-https://github.com/diegolirio/demo
+https://diegolirio.wordpress.com/2017/08/09/criando-uma-aplicacao-web-spring-boot-com-spring-data-jpa/
